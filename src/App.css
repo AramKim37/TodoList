@@ -46,13 +46,13 @@ body {
   font-size: 20px;
   margin: 50px 10px;
   padding-left: 5px;
-  color: rgb(125, 125, 106);
+  color: gray;
   font-family: "Lobster", cursive;
 }
 
 .add-btn {
   text-align: center;
-  color: rgb(125, 125, 106);
+  color: white;
   border: none;
 }
 
@@ -65,6 +65,7 @@ button {
 input {
   outline: none;
   border: none;
+  background: rgb(238, 241, 233);
 }
 
 li {

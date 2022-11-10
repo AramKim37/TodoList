@@ -43,13 +43,13 @@ const Todo = ({ text, todos, setTodos, todo, setUpdate, setInput }) => {
       <li className={`list ${todo.completed ? "complete" : ""}`}>{text}</li>
       <div className="btn-list">
         <button onClick={handleDelete}>
-          <DeleteSweepOutlinedIcon fontSize="large" sx={{ color: "red" }} />
+          <DeleteSweepOutlinedIcon fontSize="large" sx={{ color: "white" }} />
         </button>
         <button onClick={handleUpdate}>
-          <EditOffOutlinedIcon fontSize="large" sx={{ color: "green" }} />
+          <EditOffOutlinedIcon fontSize="large" sx={{ color: "white" }} />
         </button>
         <button onClick={handleComplete}>
-          <DoneOutlineIcon fontSize="large" color="primary" />
+          <DoneOutlineIcon fontSize="large" sx={{ color: "white" }} />
         </button>
       </div>
     </div>
