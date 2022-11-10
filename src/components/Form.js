@@ -48,9 +48,9 @@ const Form = ({ input, setInput, todos, setTodos, update, setUpdate }) => {
         <div className="input-field">
           <button className="add-btn" type="submit">
             {update ? (
-              <ThumbUpOffAltIcon style={{ fontSize: 65 }} />
+              <ThumbUpOffAltIcon style={{ fontSize: 35 }} />
             ) : (
-              <AddBoxIcon style={{ fontSize: 65 }} />
+              <AddBoxIcon style={{ fontSize: 35 }} />
             )}
           </button>
         </div>

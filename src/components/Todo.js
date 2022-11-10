@@ -37,14 +37,16 @@ const Todo = ({ text, todos, setTodos, todo, setUpdate, setInput }) => {
 
   return (
     <div className="todo-container">
-      <div>{getDate()}</div>
+      <div className={`todo-date ${todo.completed ? "complete" : ""}`}>
+        {getDate()}
+      </div>
       <li className={`list ${todo.completed ? "complete" : ""}`}>{text}</li>
       <div className="btn-list">
         <button onClick={handleDelete}>
           <DeleteSweepOutlinedIcon fontSize="large" sx={{ color: "red" }} />
         </button>
         <button onClick={handleUpdate}>
-          <EditOffOutlinedIcon fontSize="large" />
+          <EditOffOutlinedIcon fontSize="large" sx={{ color: "green" }} />
         </button>
         <button onClick={handleComplete}>
           <DoneOutlineIcon fontSize="large" color="primary" />

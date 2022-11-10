@@ -4,16 +4,32 @@
   box-sizing: border-box;
 }
 
-.container {
+body {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(to right bottom, #eeeee4, rgb(235, 235, 140));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right bottom, #599fb2, rgb(236, 236, 164));
+}
+
+.container {
+  width: 100%;
+  border: 1px solid white;
+  background: linear-gradient(to right bottom, #6db7ce, rgb(236, 236, 164));
+  padding: 40px 40px;
+  border-radius: 10px;
+
+  /* width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right bottom, #93c8d8, rgb(236, 236, 164)); */
 }
 
 .header {
   font-family: "Lobster", cursive;
   text-align: center;
   font-size: 100px;
+  color: white;
 }
 
 .input-container {
@@ -27,13 +43,17 @@
 }
 
 .input-text {
-  font-size: 40px;
+  font-size: 20px;
   margin: 50px 10px;
   padding-left: 5px;
+  color: rgb(125, 125, 106);
+  font-family: "Lobster", cursive;
 }
 
 .add-btn {
   text-align: center;
+  color: rgb(125, 125, 106);
+  border: none;
 }
 
 button {
@@ -74,7 +94,7 @@ li {
   margin: 20px 20px;
   border-radius: 10px;
   min-height: 3rem;
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
 }
 
 .todo-container li {
@@ -82,6 +102,15 @@ li {
   /* background-color: white; */
   font-size: 1.5rem;
   padding: 0 2rem;
+  color: white;
+  font-family: "Lobster", cursive;
+}
+
+.todo-date {
+  padding: 0 2rem;
+
+  color: white;
+  font-family: "Lobster", cursive;
 }
 
 .todoList {
