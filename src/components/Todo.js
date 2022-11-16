@@ -41,18 +41,18 @@ const Todo = ({ text, todos, setTodos, todo, setUpdate, setInput }) => {
         {getDate()}
       </div>
       <li className={`list ${todo.completed ? "complete" : ""}`}>{text}</li>
-      <div className="btn-list">
-        <button onClick={handleDelete}>
-          <DeleteSweepOutlinedIcon fontSize="large" sx={{ color: "white" }} />
-        </button>
-        <button onClick={handleUpdate}>
-          <EditOffOutlinedIcon fontSize="large" sx={{ color: "white" }} />
-        </button>
-        <button onClick={handleComplete}>
-          <DoneOutlineIcon fontSize="large" sx={{ color: "white" }} />
-        </button>
-      </div>
+      {/* <div className="btn-list"> */}
+      <button onClick={handleDelete}>
+        <DeleteSweepOutlinedIcon className="btn" />
+      </button>
+      <button onClick={handleUpdate}>
+        <EditOffOutlinedIcon className="btn" />
+      </button>
+      <button onClick={handleComplete}>
+        <DoneOutlineIcon className="btn" />
+      </button>
     </div>
+    // </div>
   );
 };
 

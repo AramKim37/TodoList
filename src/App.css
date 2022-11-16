@@ -10,15 +10,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right bottom, #599fb2, rgb(236, 236, 164));
+  /* background: linear-gradient(to right bottom, #599fb2, rgb(236, 236, 164)); */
+  background: #3794ae;
 }
 
 .container {
   width: 100%;
   border: 1px solid white;
-  background: linear-gradient(to right bottom, #6db7ce, rgb(236, 236, 164));
+  background: linear-gradient(to right bottom, #6db7ce, rgb(41, 69, 80));
   padding: 40px 40px;
   border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0.2, 0.2);
 
   /* width: 100%;
   min-height: 100vh;
@@ -91,6 +93,7 @@ li {
 .todo-container {
   display: flex;
   justify-content: center;
+  max-width: 100%;
   align-items: center;
   margin: 20px 20px;
   border-radius: 10px;
@@ -100,6 +103,7 @@ li {
 
 .todo-container li {
   flex: 1;
+  width: 100%;
   /* background-color: white; */
   font-size: 1.5rem;
   padding: 0 2rem;
@@ -127,4 +131,41 @@ li {
 
 .btn-list button {
   margin: 0 10px;
+}
+
+::placeholder {
+  color: gray;
+  opacity: 0.4;
+}
+
+.btn {
+  color: white;
+  margin: 0 5px;
+}
+
+@media (max-width: 1024px) {
+  .todo-container li {
+    /* background-color: white; */
+    font-size: 1rem;
+    padding: 0 1rem;
+    color: white;
+    font-family: "Lobster", cursive;
+  }
+  .todo-date {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+  }
+
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .btn {
+    margin: 0 5px;
+  }
+
+  .header {
+    font-size: 3rem;
+  }
 }
